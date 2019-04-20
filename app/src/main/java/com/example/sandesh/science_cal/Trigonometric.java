@@ -11,7 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Trigonometric extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-    String choices[]={"Trigonometry","Number_System","Combinatorics"};
+    String choices[]={"Trigonometry","Number System","Combinatorics","Matrix Operations"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class Trigonometric extends AppCompatActivity implements AdapterView.OnIt
     @Override
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
         Toast.makeText(getApplicationContext(), choices[position], Toast.LENGTH_LONG).show();
-        if(choices[position]=="Number_System"){
+        if(choices[position]=="Number System"){
             finish();
             Intent number_system =new Intent(Trigonometric.this, Number_system.class);
             startActivity(number_system);

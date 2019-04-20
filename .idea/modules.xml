@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SCIENCE_CAL.iml" filepath="$PROJECT_DIR$/SCIENCE_CAL.iml" />
+      <module fileurl="file://C:\Users\sandesh\Desktop\workspace\OOAD\project_latest\Scientic_Calculator\SCIENCE_CAL.iml" filepath="C:\Users\sandesh\Desktop\workspace\OOAD\project_latest\Scientic_Calculator\SCIENCE_CAL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scientic_Calculator.iml" filepath="$PROJECT_DIR$/Scientic_Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\sandesh\Desktop\workspace\OOAD\project_latest\Scientic_Calculator\app\app.iml" filepath="C:\Users\sandesh\Desktop\workspace\OOAD\project_latest\Scientic_Calculator\app\app.iml" />
     </modules>
   </component>
 </project>
