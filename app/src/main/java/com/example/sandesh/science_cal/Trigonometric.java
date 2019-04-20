@@ -39,8 +39,13 @@ public class Trigonometric extends AppCompatActivity implements AdapterView.OnIt
         }
         else if(choices[position]=="Combinatorics"){
             finish();
-            Intent number_system =new Intent(Trigonometric.this, Combinatorics.class);
-            startActivity(number_system);
+            Intent combination =new Intent(Trigonometric.this, Combinatorics.class);
+            startActivity(combination);
+        }
+        else if(choices[position]=="Matrix Operations"){
+            finish();
+            Intent matrix =new Intent(Trigonometric.this, Matrix_operation.class);
+            startActivity(matrix);
         }
     }
 
