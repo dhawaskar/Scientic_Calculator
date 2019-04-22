@@ -16,6 +16,7 @@ public class Combinatorics extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_combinatorics);
+        //Button to move to the original screen
         Button button=(Button)findViewById(R.id.selection);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
