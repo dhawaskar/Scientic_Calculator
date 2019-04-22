@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
     android:orientation="horizontal"
     android:focusable="true"
     android:focusableInTouchMode="true"
@@ -52,32 +52,6 @@
                     android:textSize="25dp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="top|left|bottom|right"
-                android:layout_weight="0.9"
-                android:gravity="fill_horizontal|start|fill_vertical|end"
-                android:orientation="vertical"
-                android:weightSum="1">
-
-                <!--<EditText-->
-                <!--android:id="@+id/selection"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:layout_gravity="top"-->
-                <!--android:layout_weight="0.1"-->
-                <!--android:background="@drawable/border"-->
-                <!--android:ems="10"-->
-                <!--android:hint="Select"-->
-                <!--android:inputType="text"-->
-                <!--android:textSize="25dp" />-->
-
-                <Spinner
-                    android:id="@+id/selection_screen_comb"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"></Spinner>
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -88,63 +62,6 @@
             android:gravity="fill_horizontal|start|fill_vertical|end"
             android:orientation="vertical"
             android:weightSum="1">
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="top|left|bottom|right"
-                android:layout_weight="0.14"
-                android:weightSum="0">
-
-                <Button
-                    android:id="@+id/btn1"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="1"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn2"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="2"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn3"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="3"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn4"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="4"
-                    android:textSize="25dp" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -161,9 +78,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="5"
-                    android:textSize="25dp" />
+                    android:text="n\u221a"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/btn6"
@@ -173,9 +93,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="6"
-                    android:textSize="25dp" />
+                    android:text="\u221a"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/btn7"
@@ -185,9 +108,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="7"
-                    android:textSize="25dp" />
+                    android:text="|a|"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/btn8"
@@ -197,9 +123,10 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/holo_orange_dark"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="8"
-                    android:textSize="25dp" />
+                    android:text="CE"
+                    android:textSize="30dp" />
 
             </LinearLayout>
 
@@ -218,9 +145,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="9"
-                    android:textSize="25dp" />
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/btn0"
@@ -230,9 +160,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="0"
-                    android:textSize="25dp" />
+                    android:text="!"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/dot"
@@ -242,9 +175,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="."
-                    android:textSize="25dp" />
+                    android:textAllCaps="false"
+                    android:textSize="30dp"/>
 
                 <Button
                     android:id="@+id/Ce"
@@ -254,9 +190,11 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/holo_orange_dark"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="Ce"
-                    android:textSize="25dp" />
+                    android:text="ncr"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
             </LinearLayout>
 
@@ -275,9 +213,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="+"
-                    android:textSize="25dp" />
+                    android:text="8"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/subt"
@@ -287,9 +228,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="-"
-                    android:textSize="25dp" />
+                    android:text="7"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/mult"
@@ -299,9 +243,12 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="*"
-                    android:textSize="25dp" />
+                    android:text="6"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/C"
@@ -311,9 +258,11 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/holo_orange_dark"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="C"
-                    android:textSize="25dp" />
+                    android:text="npr"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
             </LinearLayout>
 
@@ -333,8 +282,11 @@
                     android:layout_weight="1"
                     android:width="90dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="/"
-                    android:textSize="25dp" />
+                    android:text="3"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/npr"
@@ -345,8 +297,11 @@
                     android:layout_weight="1"
                     android:width="90dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="nPr"
-                    android:textSize="25dp" />
+                    android:text="4"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/ncr"
@@ -357,8 +312,11 @@
                     android:layout_weight="1"
                     android:width="90dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="nCr"
-                    android:textSize="25dp" />
+                    android:text="5"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/permutation"
@@ -368,8 +326,10 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/holo_orange_dark"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="!"
+                    android:text="e^x"
+                    android:textAllCaps="false"
                     android:textSize="30dp" />
 
             </LinearLayout>
@@ -382,17 +342,32 @@
                 android:weightSum="0">
 
 
-                <ImageButton
+                <!--<ImageButton-->
+                    <!--android:id="@+id/epowx"-->
+                    <!--style="?android:attr/buttonStyleSmall"-->
+                    <!--android:layout_width="90dp"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:layout_weight="0.1"-->
+                    <!--android:width="83dp"-->
+                    <!--android:tooltipText="@string/test_string"-->
+                    <!--android:gravity="center_vertical|center_horizontal">// this is the-->
+                    <!--image(eye)</ImageButton>-->
+                <Button
                     android:id="@+id/epowx"
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
-                    android:layout_weight="0.1"
-                    android:width="83dp"
-                    android:background="@drawable/epowx"
-                    android:gravity="center_vertical|center_horizontal">// this is the
-                    image(eye)</ImageButton>
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="2"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="30dp"
+                     />
 
                 <Button
                     android:id="@+id/logn"
@@ -403,20 +378,26 @@
                     android:layout_weight="1"
                     android:width="90dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="ln"
+                    android:text="1"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
                     android:textSize="30dp" />
 
-                <ImageButton
+                <Button
                     android:id="@+id/apow2"
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
-                    android:layout_weight="0.1"
-                    android:width="83dp"
-                    android:background="@drawable/a2"
-                    android:gravity="center_vertical|center_horizontal">// this is the
-                    image(eye)</ImageButton>
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/abs_a"
@@ -426,8 +407,10 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
+                    android:background="@android:color/holo_orange_dark"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="|a|"
+                    android:text="a^2"
+                    android:textAllCaps="false"
                     android:textSize="30dp" />
 
             </LinearLayout>
@@ -439,20 +422,23 @@
                 android:layout_weight="0.14"
                 android:weightSum="0">
 
-                <ImageButton
-                    android:id="@+id/root_2_n"
+                <Button
+                    android:id="@+id/sqrt_n"
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
-                    android:layout_weight="0.1"
-                    android:width="83dp"
-                    android:background="@drawable/sqrtofn"
-                    android:gravity="center_vertical|center_horizontal">// this is the
-                    image(eye)</ImageButton>
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="log"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
                 <Button
-                    android:id="@+id/round"
+                    android:id="@+id/sqrt"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -460,33 +446,65 @@
                     android:layout_weight="1"
                     android:width="90dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="ROUND"
-                    android:textSize="15dp" />
+                    android:text="ln"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="30dp" />
 
-                <ImageButton
-                    android:id="@+id/epowx"
+                <Button
+                    android:id="@+id/phi"
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
-                    android:layout_weight="0.1"
-                    android:width="83dp"
-                    android:background="@drawable/phi"
-                    android:gravity="center_vertical|center_horizontal">// this is the
-                    image(eye)</ImageButton>
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@android:color/background_dark"
+                    android:textColor="#ffffff"
+                    android:text="\u03C0"
+                    android:textAllCaps="false"
+                    android:textStyle="italic"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="30dp" />
 
-                <ImageButton
-                    android:id="@+id/apown"
+                <Button
+                    android:id="@+id/apowb"
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
-                    android:layout_weight="0.1"
-                    android:width="83dp"
-                    android:background="@drawable/apowb"
-                    android:gravity="center_vertical|center_horizontal">// this is the
-                    image(eye)
-                </ImageButton>
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="="
+                    android:textAllCaps="false"
+                    android:textSize="45dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|left|bottom|center|right"
+                android:layout_weight="0.14"
+                android:weightSum="0">
+
+                <Button
+                    android:id="@+id/selection"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="TRIGNOMETRIC"
+                    android:textAllCaps="false"
+                    android:background="@drawable/ic_launcher_background"
+                    android:textSize="30dp" />
 
 
             </LinearLayout>
