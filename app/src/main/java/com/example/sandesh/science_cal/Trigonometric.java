@@ -12,8 +12,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 /*
 This class basically handles the activity of the Trigonometric screen and uses the
@@ -21,7 +24,7 @@ back end code to perform all the trigonometric operations
  */
 public class Trigonometric extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     //Four screen choices given to the user
-    String choices[]={"TRIGNOMETRY","Number System","Combinatorics","Matrix Operations"};
+    String choices[]={"OPTIONS","Number System","Combinatorics","Matrix Operations"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +37,21 @@ public class Trigonometric extends AppCompatActivity implements AdapterView.OnIt
         comb.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         selection_screen.setPrompt("Select Operation");
         selection_screen.setAdapter(comb);
+        ToggleButton toggleButton=(ToggleButton)findViewById(R.id.toggle);
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    Toast.makeText(getApplicationContext(), "Degree", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Rad", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
     @Override
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
-        Toast.makeText(getApplicationContext(), choices[position], Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(), choices[position], Toast.LENGTH_LONG).show();
         //To go to Number system Screen
         if(choices[position]=="Number System"){
             finish();
