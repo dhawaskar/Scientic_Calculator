@@ -50,7 +50,6 @@
                     android:ems="10"
                     android:hint="Enter a number"
                     android:inputType="number"
-                    android:text="Enter the number"
                     android:textColor="#000000"
                     android:textSize="25dp" />
             </LinearLayout>
@@ -172,7 +171,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn5"
+                    android:id="@+id/btnbrkt"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -187,7 +186,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn6"
+                    android:id="@+id/btnbrkt2"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -202,7 +201,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn7"
+                    android:id="@+id/btnce"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -216,7 +215,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn8"
+                    android:id="@+id/btnc"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -238,7 +237,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn9"
+                    android:id="@+id/btntanh"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -253,7 +252,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn0"
+                    android:id="@+id/btncosh"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -268,7 +267,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/dot"
+                    android:id="@+id/btnsinh"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -283,7 +282,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/Ce"
+                    android:id="@+id/btnmod"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -305,7 +304,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/add"
+                    android:id="@+id/btntan"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -320,7 +319,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/subt"
+                    android:id="@+id/btncos"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -335,7 +334,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/mult"
+                    android:id="@+id/btnsin"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -350,7 +349,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/C"
+                    android:id="@+id/btndiv"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -372,7 +371,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/div"
+                    android:id="@+id/button9"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -387,7 +386,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/cos"
+                    android:id="@+id/button8"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -401,7 +400,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/sin"
+                    android:id="@+id/button7"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -415,7 +414,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/tan"
+                    android:id="@+id/btnmul"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -437,7 +436,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/sinh"
+                    android:id="@+id/button6"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -453,7 +452,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/cosh"
+                    android:id="@+id/button5"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -467,7 +466,7 @@
                     android:textSize="20dp" />
 
                 <Button
-                    android:id="@+id/tanh"
+                    android:id="@+id/button4"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -481,7 +480,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/log"
+                    android:id="@+id/btnsub"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -503,7 +502,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/exp"
+                    android:id="@+id/button3"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -518,7 +517,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/sqrt"
+                    android:id="@+id/button2"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -532,7 +531,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/rad"
+                    android:id="@+id/button1"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -546,7 +545,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/deg"
+                    android:id="@+id/btnadd"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -569,7 +568,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/button_dot"
+                    android:id="@+id/btndot"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
@@ -583,7 +582,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/button_0"
+                    android:id="@+id/button0"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
