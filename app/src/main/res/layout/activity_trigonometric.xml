@@ -11,7 +11,7 @@
     android:orientation="horizontal"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".Trigonometric">
+    tools:context=".TrignoScreen">
 
     <LinearLayout
         android:layout_width="600dp"
