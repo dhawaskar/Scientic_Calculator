@@ -1,6 +1,6 @@
 package com.ooad.backend.data.types.operators;
 
-import com.ooad.backend.data.types.DataType;
+import com.ooad.backend.data.types.ElemTypeEnum;
 
 public final class Utils {
     public static boolean checkNonZero(Double d){
@@ -13,7 +13,7 @@ public final class Utils {
         return true;
     }
 
-    public static boolean checkNonZero(DataType d){
+    public static boolean checkNonZero(ElemTypeEnum d){
         if (d == null || d.negate() == d) return true;
         return true;
     }
