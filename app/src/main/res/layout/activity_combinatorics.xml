@@ -111,7 +111,7 @@
                     android:background="@drawable/myborder_grey"
                     android:textColor="#ffffff"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="|a|"
+                    android:text="CE"
                     android:textAllCaps="false"
                     android:textSize="30dp" />
 
@@ -125,7 +125,7 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="CE"
+                    android:text="C"
                     android:textSize="30dp" />
 
             </LinearLayout>

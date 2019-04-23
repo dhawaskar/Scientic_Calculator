@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="top|left|bottom|right"
-            android:layout_weight="0.1"
+            android:layout_weight="0.2"
             android:gravity="fill_horizontal|start|fill_vertical|end"
             android:orientation="horizontal"
             android:weightSum="1">
@@ -50,7 +50,6 @@
                     android:ems="10"
                     android:hint="Enter a number"
                     android:inputType="number"
-                    android:text="Enter the Matrix"
                     android:textColor="#000000"
                     android:textSize="25dp" />
             </LinearLayout>
@@ -81,9 +80,10 @@
                     android:layout_gravity="top|left|bottom|right"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/black"
+                    android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="9"
+                    android:text="m,n"
+                    android:textAllCaps="false"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -95,9 +95,10 @@
                     android:layout_gravity="top|left|bottom|right"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/background_dark"
+                    android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="-"
+                    android:text="trans"
+                    android:textAllCaps="false"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -109,9 +110,10 @@
                     android:layout_gravity="top|left|bottom|right"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/background_dark"
+                    android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="*"
+                    android:text="inve"
+                    android:textAllCaps="false"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -123,9 +125,9 @@
                     android:layout_gravity="top|left|bottom|right"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/holo_orange_dark"
+                    android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="CE"
+                    android:text="C"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -146,10 +148,10 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
                     android:shadowColor="@color/colorPrimaryDark"
-                    android:text="8"
+                    android:text="9"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -161,9 +163,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="7"
+                    android:text="8"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -175,9 +177,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="6"
+                    android:text="7"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -189,7 +191,72 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/holo_orange_dark"
+                    android:background="@drawable/myborder_yellow"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="CE"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|left|bottom|center|right"
+                android:layout_weight="0.2"
+                android:weightSum="0">
+
+                <Button
+                    android:id="@+id/btn51"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:text="6"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btn61"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="5"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btn71"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="4"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btn81"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="+"
                     android:textColor="#ffffff"
@@ -212,9 +279,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="5"
+                    android:text="3"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -226,9 +293,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="4"
+                    android:text="2"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -240,9 +307,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="3"
+                    android:text="1"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -254,9 +321,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/holo_orange_dark"
+                    android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text=","
+                    android:text="-"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -277,9 +344,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="2"
+                    android:text=","
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -291,9 +358,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="1"
+                    android:text="0"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -305,9 +372,9 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="#000000"
+                    android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="0"
+                    android:text="*"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -319,7 +386,7 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@android:color/holo_orange_dark"
+                    android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="="
                     android:textColor="#ffffff"
