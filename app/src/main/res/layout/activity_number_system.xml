@@ -147,7 +147,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn1"
+                    android:id="@+id/btnf"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -162,7 +162,37 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn2"
+                    android:id="@+id/btne"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left|bottom|right"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="e"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btnd"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left|bottom|right"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="d"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btncl"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -170,36 +200,6 @@
                     android:layout_weight="1"
                     android:width="90dp"
                     android:background="@drawable/myborder_grey"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="bin"
-                    android:textColor="#ffffff"
-                    android:textAllCaps="false"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn3"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_grey"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="hex"
-                    android:textColor="#ffffff"
-                    android:textAllCaps="false"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn4"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="C"
                     android:textAllCaps="false"
@@ -216,7 +216,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn5"
+                    android:id="@+id/btna"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -227,12 +227,12 @@
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
                     android:shadowColor="@color/colorPrimaryDark"
-                    android:text="e"
+                    android:text="a"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn6"
+                    android:id="@+id/btnb"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -241,13 +241,13 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="d"
+                    android:text="b"
                     android:textColor="#ffffff"
                     android:textAllCaps="false"
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn7"
+                    android:id="@+id/btnc"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -262,16 +262,16 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn8"
+                    android:id="@+id/btndel"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@drawable/myborder_yellow"
+                    android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="CE"
+                    android:text="del"
                     android:textColor="#ffffff"
                     android:textAllCaps="false"
                     android:textSize="25dp" />
@@ -296,66 +296,12 @@
                     android:background="@drawable/myborder_black"
                     android:textAllCaps="false"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="b"
-                    android:textColor="#ffffff"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn0"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_black"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="a"
-                    android:textColor="#ffffff"
-                    android:textAllCaps="false"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/dot"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_black"
-                    android:gravity="center_vertical|center_horizontal"
                     android:text="9"
                     android:textColor="#ffffff"
-                    android:textAllCaps="false"
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/Ce"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_yellow"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="*"
-                    android:textColor="#ffffff"
-                    android:textAllCaps="false"
-                    android:textSize="25dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="top|left|bottom|center|right"
-                android:layout_weight="0.14"
-                android:weightSum="0">
-
-                <Button
-                    android:id="@+id/add"
+                    android:id="@+id/btn8"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -365,12 +311,12 @@
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="8"
-                    android:textAllCaps="false"
                     android:textColor="#ffffff"
+                    android:textAllCaps="false"
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/subt"
+                    android:id="@+id/btn7"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -385,7 +331,31 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/mult"
+                    android:id="@+id/btnbin"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_yellow"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="bin"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|left|bottom|center|right"
+                android:layout_weight="0.14"
+                android:weightSum="0">
+
+                <Button
+                    android:id="@+id/btn6"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -395,12 +365,42 @@
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="6"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="5"
                     android:textColor="#ffffff"
                     android:textAllCaps="false"
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/C"
+                    android:id="@+id/btn4"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="4"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btnhex"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -409,7 +409,7 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="-"
+                    android:text="hex"
                     android:textColor="#ffffff"
                     android:textAllCaps="false"
                     android:textSize="25dp" />
@@ -423,38 +423,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn11"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_black"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="5"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn21"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_black"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="4"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="25dp" />
-
-                <Button
-                    android:id="@+id/btn31"
+                    android:id="@+id/btn3"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -466,33 +435,11 @@
                     android:text="3"
                     android:textAllCaps="false"
                     android:textColor="#ffffff"
+
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn41"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="top|left|bottom|right"
-                    android:layout_weight="1"
-                    android:width="90dp"
-                    android:background="@drawable/myborder_yellow"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:text="+"
-                    android:textColor="#ffffff"
-                    android:textAllCaps="false"
-                    android:textSize="25dp" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="top|left|bottom|right"
-                android:layout_weight="0.14"
-                android:weightSum="0">
-
-                <Button
-                    android:id="@+id/btn111"
+                    android:id="@+id/btn2"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -507,7 +454,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn211"
+                    android:id="@+id/btn1"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -517,12 +464,65 @@
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="1"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btndec"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left|bottom|right"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_yellow"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="dec"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top|left|bottom|right"
+                android:layout_weight="0.14"
+                android:weightSum="0">
+
+                <Button
+                    android:id="@+id/btnplus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left|bottom|right"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="+"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left|bottom|right"
+                    android:layout_weight="1"
+                    android:width="90dp"
+                    android:background="@drawable/myborder_black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="0"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
                     android:textAllCaps="false"/>
 
                 <Button
-                    android:id="@+id/btn311"
+                    android:id="@+id/btnsub"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -532,12 +532,12 @@
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
                     android:textAllCaps="false"
-                    android:text="0"
+                    android:text="-"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn411"
+                    android:id="@+id/btnequ"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
