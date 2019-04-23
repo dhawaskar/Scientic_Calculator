@@ -1,9 +1,11 @@
-import com.ooad.backend.Expression;
+
+import com.ooad.backend.data.types.Type;
 
 
 public class HelloWorld {
     public static void main(String[] args) {
-        Expression eh = new Expression("(2+3)!");
-        System.out.println(eh.calculate());
+        Double d = new Double(1);
+        Integer i = new Integer(1);
+        System.out.println(1.0 == 1);
     }
 }
