@@ -192,7 +192,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btncl"
+                    android:id="@+id/btn_c"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -262,7 +262,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btndel"
+                    android:id="@+id/btn_del"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -271,9 +271,9 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="del"
-                    android:textColor="#ffffff"
+                    android:text="DEL"
                     android:textAllCaps="false"
+                    android:textColor="#ffffff"
                     android:textSize="25dp" />
 
             </LinearLayout>
@@ -492,7 +492,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btnplus"
+                    android:id="@+id/btn_add"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -522,7 +522,7 @@
                     android:textAllCaps="false"/>
 
                 <Button
-                    android:id="@+id/btnsub"
+                    android:id="@+id/btn_sub"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -537,7 +537,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btnequ"
+                    android:id="@+id/btn_eq"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"

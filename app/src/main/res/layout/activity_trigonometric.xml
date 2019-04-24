@@ -201,7 +201,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btndel"
+                    android:id="@+id/btn_del"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -215,7 +215,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btncl"
+                    android:id="@+id/btn_c"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"

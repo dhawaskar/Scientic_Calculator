@@ -7,11 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.sandesh.science_cal.button.behavior.DefaultButtonBehavior;
 
 public abstract class CommonScreenElements extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnCE, btnC, btnDel;
+    protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnC, btnDel;
 
     private final static String numberSystemDesc = "Number System";
     private final static String complexNumberDesc = "Complex Numbers";
@@ -36,21 +37,25 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
             startActivity(number_system);
         }
         //To go to Combinatorial screen
-        else if (choices[position].equals("Combinatorics")) {
+        else if (choices[position].equals(combinatoricsDesc)) {
             finish();
             Intent combination = new Intent(this, Combinatorics.class);
             startActivity(combination);
         }
         //To go to Matrix operation screen
-        else if (choices[position].equals("Matrix Operations")) {
+        else if (choices[position].equals(matrixDesc)) {
             finish();
             Intent matrixoperations = new Intent(this, MatrixOperations.class);
             startActivity(matrixoperations);
         } else if (choices[position].equals(complexNumberDesc)){
             finish();
             Intent complex = new Intent(this, ComplexOperations.class);
-            startActivity(complex);
-        }
+            startActivity(complex);}
+//        } else {
+//            finish();
+//            Intent trigno = new Intent(this, TrignoScreen.class);
+//            startActivity(trigno);
+//        }
     }
 
     @Override
@@ -75,8 +80,8 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         btn7 = findViewById(R.id.btn7);
         btn8 = findViewById(R.id.btn8);
         btn9 = findViewById(R.id.btn9);
-        btnDel = findViewById(R.id.btndel);
-        btnC = findViewById(R.id.btncl);
+        btnDel = findViewById(R.id.btn_del);
+        btnC = findViewById(R.id.btn_c);
 
         btn0.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn0));
         btn1.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn1));

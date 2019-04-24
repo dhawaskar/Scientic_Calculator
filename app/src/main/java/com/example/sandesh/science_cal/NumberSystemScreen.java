@@ -10,7 +10,7 @@ import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.mXparser;
 
 public class NumberSystemScreen extends CommonScreenElements {
-    Button btnPlus, btnSub, btnMul, btnDiv, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF,btnBin,btnDec,btnHex;
+    Button btnPlus, btnSub, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF,btnBin,btnDec,btnHex;
     protected EditText txtInput, binOutput, hexOutput, decOutput;
 
     class AppState {
@@ -62,8 +62,6 @@ public class NumberSystemScreen extends CommonScreenElements {
 
         btnPlus.setOnClickListener(new DefaultButtonBehavior(txtInput, btnPlus));
         btnSub.setOnClickListener(new DefaultButtonBehavior(txtInput, btnSub));
-        btnMul.setOnClickListener(new DefaultButtonBehavior(txtInput, btnMul));
-        btnDiv.setOnClickListener(new DefaultButtonBehavior(txtInput, btnDiv));
 
         btnhA.setOnClickListener(new DefaultButtonBehavior(txtInput, btnhA));
         btnhB.setOnClickListener(new DefaultButtonBehavior(txtInput, btnhB));
@@ -140,11 +138,10 @@ public class NumberSystemScreen extends CommonScreenElements {
         hexOutput = findViewById(R.id.editText3);
         decOutput = findViewById(R.id.editText4);
 
-        btnPlus = findViewById(R.id.btnadd);
-        btnSub = findViewById(R.id.btnsub);
-        btnMul = findViewById(R.id.btnmul);
-        btnDiv = findViewById(R.id.btndiv);
-        btnEqu = findViewById(R.id.equals);
+        btnPlus = findViewById(R.id.btn_add);
+        btnSub = findViewById(R.id.btn_sub);
+
+        btnEqu = findViewById(R.id.btn_eq);
 
         btnhA = findViewById(R.id.btna);
         btnhB = findViewById(R.id.btnb);
