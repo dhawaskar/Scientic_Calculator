@@ -1,44 +1,48 @@
 package com.ooad.backend.la;
 
-import com.ooad.backend.data.types.DoubleElemType;
-import com.ooad.backend.data.types.ElemTypeEnum;
-import com.ooad.backend.data.types.IntegerElemType;
+import com.ooad.backend.data.types.DoubleElem;
+import com.ooad.backend.data.types.ElemType;
+import com.ooad.backend.data.types.IntegerElem;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
+/**
+ * @author Hasil Sharma
+ */
 public class MatrixTest {
     private Matrix doubleMatrix, integerMatrix, complexMatrix, integerMatrixInv, identityMatrix;
-    private ElemTypeEnum[][] integerMatrixData, integerMatrixInvData;
+    private ElemType[][] integerMatrixData, integerMatrixInvData;
     private int m, n;
     @Before
     public void setUp() throws Exception {
         this.m = 2;
         this.n = 2;
 
-        integerMatrixData = new ElemTypeEnum[m][n];
-        integerMatrixData[0][0] = new IntegerElemType(4);
-        integerMatrixData[0][1] = new IntegerElemType(7);
-        integerMatrixData[1][0] = new IntegerElemType(2);
-        integerMatrixData[1][1] = new IntegerElemType(6);
+        integerMatrixData = new ElemType[m][n];
+        integerMatrixData[0][0] = new IntegerElem(4);
+        integerMatrixData[0][1] = new IntegerElem(7);
+        integerMatrixData[1][0] = new IntegerElem(2);
+        integerMatrixData[1][1] = new IntegerElem(6);
 
         integerMatrix = new Matrix(m, n, integerMatrixData);
 
-        integerMatrixInvData = new ElemTypeEnum[m][n];
-        integerMatrixInvData[0][0] = new DoubleElemType(0.6);
-        integerMatrixInvData[0][1] = new DoubleElemType(-0.7);
-        integerMatrixInvData[1][0] = new DoubleElemType(-0.2);
-        integerMatrixInvData[1][1] = new DoubleElemType(0.4);
+        integerMatrixInvData = new ElemType[m][n];
+        integerMatrixInvData[0][0] = new DoubleElem(0.6);
+        integerMatrixInvData[0][1] = new DoubleElem(-0.7);
+        integerMatrixInvData[1][0] = new DoubleElem(-0.2);
+        integerMatrixInvData[1][1] = new DoubleElem(0.4);
 
         integerMatrixInv = new Matrix(m, n, integerMatrixInvData);
 
-        ElemTypeEnum[][] identityData = new ElemTypeEnum[m][n];
+        ElemType[][] identityData = new ElemType[m][n];
 
-        identityData[0][0] = new IntegerElemType(1);
-        identityData[0][1] = new IntegerElemType(0);
-        identityData[1][0] = new IntegerElemType(0);
-        identityData[1][1] = new IntegerElemType(1);
+        identityData[0][0] = new IntegerElem(1);
+        identityData[0][1] = new IntegerElem(0);
+        identityData[1][0] = new IntegerElem(0);
+        identityData[1][1] = new IntegerElem(1);
 
         identityMatrix = new Matrix(m, n, identityData);
     }
@@ -67,8 +71,8 @@ public class MatrixTest {
 
     @Test
     public void determinant() throws Exception {
-        ElemTypeEnum det = integerMatrix.determinant();
-        assertEquals(det, new IntegerElemType(10));
+        ElemType det = integerMatrix.determinant();
+        assertEquals(det, new IntegerElem(10));
     }
 
     @Test

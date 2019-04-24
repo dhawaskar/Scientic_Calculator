@@ -3,22 +3,26 @@ package com.ooad.backend.data.types;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
 
-public class DoubleElemTypeEnumTest {
-    private DoubleElemType doubleType;
-    private DoubleElemType doubleTypeSame1, doubleTypeSame2;
+/**
+ * @author Hasil Sharma
+ */
+public class DoubleElemTest {
+    private DoubleElem doubleType;
+    private DoubleElem doubleTypeSame1, doubleTypeSame2;
 
     @Before
     public void setUp() throws Exception {
-        doubleType = new DoubleElemType(1.0);
-        doubleTypeSame1 = new DoubleElemType(2);
-        doubleTypeSame2 = new DoubleElemType(2.0);
+        doubleType = new DoubleElem(1.0);
+        doubleTypeSame1 = new DoubleElem(2);
+        doubleTypeSame2 = new DoubleElem(2.0);
     }
 
     @Test
     public void getDataType() {
-        assertSame(doubleType.getDataType(), Type.DOUBLE);
+        assertSame(doubleType.getDataType(), ElemTypeEnum.DOUBLE);
     }
 
     @Test

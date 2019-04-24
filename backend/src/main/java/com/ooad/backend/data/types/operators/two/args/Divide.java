@@ -4,6 +4,12 @@ import com.ooad.backend.data.types.operators.Operator2Arg;
 import com.ooad.backend.data.types.operators.Utils;
 import org.apache.commons.math3.complex.Complex;
 
+/**
+ * @author Hasil, Sandesh, Gautham
+ *
+ * Implements interface Operator2Arg and supports the division operation between two entities of different types, as
+ * dictated by the interface
+ */
 public class Divide implements Operator2Arg {
     @Override
     public Double apply(Double d1, Double d2) {

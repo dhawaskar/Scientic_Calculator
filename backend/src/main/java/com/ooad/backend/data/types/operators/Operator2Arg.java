@@ -2,6 +2,12 @@ package com.ooad.backend.data.types.operators;
 
 import org.apache.commons.math3.complex.Complex;
 
+/**
+ * @author Hasil, Sandesh, Gautham
+ *
+ * An interface of operators which operate on two entities. Supports the action of operation between args of type
+ * Double, Integer, and Complex
+ */
 public interface Operator2Arg {
     Double apply(Double d1, Double d2);
 
