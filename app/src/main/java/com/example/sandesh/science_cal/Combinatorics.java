@@ -22,7 +22,7 @@ public class Combinatorics extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Intent trignometric =new Intent(Combinatorics.this, Trigonometric.class);
+                Intent trignometric =new Intent(Combinatorics.this, TrignoScreen.class);
                 startActivity(trignometric);
             }});
     }

@@ -1,8 +1,10 @@
 package com.example.sandesh.science_cal;
 
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -99,6 +101,14 @@ public class TrignoScreen extends CommonScreenElements {
 
     @Override
     protected void onCreateDelegation() {
+
+        Spinner selection_screen = (Spinner) findViewById(R.id.selection_screen);
+        selection_screen.setOnItemSelectedListener(this);
+        //Creating the drop down menue
+        ArrayAdapter comb = new ArrayAdapter(this, android.R.layout.simple_spinner_item, choices);
+        comb.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        selection_screen.setPrompt("Select Operation");
+        selection_screen.setAdapter(comb);
 
         btnDot = findViewById(R.id.btndot);
         btnPlus = findViewById(R.id.btnadd);

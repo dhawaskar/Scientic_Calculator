@@ -23,7 +23,7 @@ public class NumberSystem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Intent trignometric =new Intent(NumberSystem.this, Trigonometric.class);
+                Intent trignometric =new Intent(NumberSystem.this, TrignoScreen.class);
                 startActivity(trignometric);
             }});
     }

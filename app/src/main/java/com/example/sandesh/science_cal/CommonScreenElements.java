@@ -12,7 +12,14 @@ import com.example.sandesh.science_cal.button.behavior.DefaultButtonBehavior;
 
 public abstract class CommonScreenElements extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnCE, btnC;
-    private final static String choices[] = {"OPTIONS", "Number System", "Combinatorics", "Matrix Operations"};
+
+    private final static String numberSystemDesc = "Number System";
+    private final static String complexNumberDesc = "Complex Numbers";
+    private final static String combinatoricsDesc = "Combinatorics";
+    private final static String matrixDesc = "Matrix Operations";
+    protected final static String choices[] = {"OPTIONS", numberSystemDesc, combinatoricsDesc,
+            matrixDesc, complexNumberDesc};
+
     private int RLayoutActivity;
     protected EditText txtOutput;
     public CommonScreenElements(int RLayoutActivity) {
@@ -23,7 +30,7 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
 //        Toast.makeText(getApplicationContext(), choices[position], Toast.LENGTH_LONG).show();
         //To go to Number system Screen
-        if (choices[position].equals("Number System")) {
+        if (choices[position].equals(numberSystemDesc)) {
             finish();
             Intent number_system = new Intent(this, NumberSystem.class);
             startActivity(number_system);
@@ -39,6 +46,10 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
             finish();
             Intent matrixoperations = new Intent(this, MatrixOperations.class);
             startActivity(matrixoperations);
+        } else if (choices[position].equals(complexNumberDesc)){
+            finish();
+            Intent complex = new Intent(this, ComplexOperations.class);
+            startActivity(complex);
         }
     }
 

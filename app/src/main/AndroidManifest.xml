@@ -19,6 +19,7 @@
         <activity android:name=".NumberSystem" />
         <activity android:name=".MatrixOperations" />
         <activity android:name=".Combinatorics"></activity>
+        <activity android:name=".ComplexOperations"></activity>
     </application>
 
 </manifest>
