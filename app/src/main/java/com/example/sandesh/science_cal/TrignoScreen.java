@@ -37,7 +37,7 @@ public class TrignoScreen extends CommonScreenElements {
     }
 
     private Button btnSub, btnMul, btnDiv, btnCos, btnSin, btnTan, btnCosh, btnSinh, btnTanh,
-            btnMod, btnEqu, btnBrkt1, btnBrkt2, btnDot, btnPlus;
+            btnMod, btnEqu, btnBrkt1, btnBrkt2, btnDot, btnPlus,btnC;
     private ToggleButton toggleButton;
 
     private AppState appState;
@@ -68,6 +68,13 @@ public class TrignoScreen extends CommonScreenElements {
         btnMod.setOnClickListener(new DefaultButtonBehavior(txtOutput, btnMod));
         btnBrkt1.setOnClickListener(new DefaultButtonBehavior(txtOutput, btnBrkt1));
         btnBrkt2.setOnClickListener(new DefaultButtonBehavior(txtOutput, btnBrkt2));
+
+        btnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txtOutput.setText("");
+            }
+        });
         btnEqu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,7 +137,7 @@ public class TrignoScreen extends CommonScreenElements {
         btnEqu = findViewById(R.id.equals);
         btnBrkt1 = findViewById(R.id.btnbrkt);
         btnBrkt2 = findViewById(R.id.btnbrkt2);
-
+        btnC = findViewById(R.id.btn_c);
         toggleButton = (ToggleButton) findViewById(R.id.toggle);
 
     }

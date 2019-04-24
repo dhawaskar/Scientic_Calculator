@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.example.sandesh.science_cal.button.behavior.DefaultButtonBehavior;
 
 public abstract class CommonScreenElements extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnC, btnDel;
+    protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDel;
 
     private final static String numberSystemDesc = "Number System";
     private final static String complexNumberDesc = "Complex Numbers";
@@ -81,7 +81,6 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         btn8 = findViewById(R.id.btn8);
         btn9 = findViewById(R.id.btn9);
         btnDel = findViewById(R.id.btn_del);
-        btnC = findViewById(R.id.btn_c);
 
         btn0.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn0));
         btn1.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn1));
@@ -94,12 +93,7 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         btn8.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn8));
         btn9.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn9));
 
-        btnC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                txtOutput.setText("");
-            }
-        });
+
 
         btnDel.setOnClickListener(new View.OnClickListener() {
             @Override

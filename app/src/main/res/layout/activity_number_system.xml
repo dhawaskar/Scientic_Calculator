@@ -73,9 +73,8 @@
                     android:layout_weight="1"
                     android:background="#A9A9A9"
                     android:ems="10"
-                    android:hint="Enter a number"
+                    android:hint="Binary Output"
                     android:inputType="number"
-                    android:text="bin"
                     android:textColor="#000000"
                     android:textSize="25dp" />
             </LinearLayout>
@@ -97,9 +96,8 @@
                     android:layout_weight="1"
                     android:background="#A9A9A9"
                     android:ems="10"
-                    android:hint="Enter a number"
+                    android:hint="Hex Output"
                     android:inputType="number"
-                    android:text="hex"
                     android:textColor="#000000"
                     android:textSize="25dp" />
             </LinearLayout>
@@ -121,9 +119,8 @@
                     android:layout_weight="1"
                     android:background="#A9A9A9"
                     android:ems="10"
-                    android:hint="DEC"
+                    android:hint="Decimal Output"
                     android:inputType="number"
-                    android:text="dec"
                     android:textColor="#000000"
                     android:textSize="25dp" />
             </LinearLayout>

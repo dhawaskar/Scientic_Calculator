@@ -10,7 +10,7 @@ import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.mXparser;
 
 public class NumberSystemScreen extends CommonScreenElements {
-    Button btnPlus, btnSub, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF,btnBin,btnDec,btnHex;
+    Button btnPlus, btnSub, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF,btnBin,btnDec,btnHex,btnC;
     protected EditText txtInput, binOutput, hexOutput, decOutput;
 
     class AppState {
@@ -89,6 +89,15 @@ public class NumberSystemScreen extends CommonScreenElements {
                 appState.setModeToHex();
             }
         });
+        btnC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txtOutput.setText("");
+                binOutput.setText("");
+                decOutput.setText("");
+                hexOutput.setText("");
+            }
+        });
 
         btnEqu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,6 +162,6 @@ public class NumberSystemScreen extends CommonScreenElements {
         btnDec= findViewById(R.id.btndec);
         btnHex=findViewById(R.id.btnhex);
         btnBin=findViewById(R.id.btnbin);
-
+        btnC = findViewById(R.id.btn_c);
     }
 }
