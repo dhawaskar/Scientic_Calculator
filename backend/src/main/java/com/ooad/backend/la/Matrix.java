@@ -1,18 +1,21 @@
 package com.ooad.backend.la;
 
-import com.ooad.backend.data.types.ElemTypeEnum;
-import com.ooad.backend.data.types.IntegerElemType;
+import com.ooad.backend.data.types.ElemType;
+import com.ooad.backend.data.types.IntegerElem;
 import com.ooad.backend.data.types.operators.Utils;
+import com.ooad.backend.la.exceptions.IncompatibleMatricesException;
 import com.ooad.backend.la.exceptions.MatrixNonSquareException;
 import com.ooad.backend.la.exceptions.SingularMatrixException;
-import com.ooad.backend.la.exceptions.IncompatibleMatricesException;
 
+/**
+ * @author Hasil Sharma
+ */
 public class Matrix {
     private int M;
     private int N;
-    private ElemTypeEnum[][] data;
+    private ElemType[][] data;
 
-    public Matrix(int M, int N, ElemTypeEnum[][] data) {
+    public Matrix(int M, int N, ElemType[][] data) {
         this.M = M;
         this.N = N;
         this.data = data;
@@ -22,7 +25,7 @@ public class Matrix {
         return new int[]{this.M, this.N};
     }
 
-    public ElemTypeEnum[][] getData() {
+    public ElemType[][] getData() {
         return data;
     }
 
@@ -34,14 +37,14 @@ public class Matrix {
         if (!this.isSquare())
             throw new MatrixNonSquareException();
 
-        ElemTypeEnum det = this.determinant();
+        ElemType det = this.determinant();
         if (!Utils.checkNonZero(det))
             throw new SingularMatrixException();
 
-        ElemTypeEnum[][] adj = new ElemTypeEnum[N][N];
+        ElemType[][] adj = new ElemType[N][N];
         this.adjoint(adj);
 
-        ElemTypeEnum[][] inverse = new ElemTypeEnum[N][N];
+        ElemType[][] inverse = new ElemType[N][N];
         for (int i=0; i<N; i++) {
             for (int j = 0; j < N; j++) {
                 inverse[i][j] = adj[i][j].div(det);
@@ -51,24 +54,24 @@ public class Matrix {
         return new Matrix(M, N, inverse);
     }
 
-    public ElemTypeEnum determinant() throws Exception {
+    public ElemType determinant() throws Exception {
         if (!this.isSquare())
             throw new MatrixNonSquareException();
 
         return determinantHelper(this.data, this.M);
     }
 
-    private ElemTypeEnum determinantHelper(ElemTypeEnum[][] mat, int n){
-        ElemTypeEnum ans = new IntegerElemType(0);
+    private ElemType determinantHelper(ElemType[][] mat, int n){
+        ElemType ans = new IntegerElem(0);
         if (n == 1)
             return mat[0][0];
 
-        ElemTypeEnum[][] temp = new ElemTypeEnum[this.M][this.M];
-        ElemTypeEnum sign = new IntegerElemType(1);
+        ElemType[][] temp = new ElemType[this.M][this.M];
+        ElemType sign = new IntegerElem(1);
 
         for(int f = 0; f < n; f++){
             getCofactor(mat, temp, 0, f, n);
-            ElemTypeEnum tans = determinantHelper(temp, n - 1);
+            ElemType tans = determinantHelper(temp, n - 1);
             tans = tans.mul(mat[0][f]);
             tans = tans.mul(sign);
             ans = ans.add(tans);
@@ -79,7 +82,7 @@ public class Matrix {
         return ans;
     }
 
-    private void getCofactor(ElemTypeEnum[][] mat, ElemTypeEnum[][] temp, int p, int q, int n){
+    private void getCofactor(ElemType[][] mat, ElemType[][] temp, int p, int q, int n){
         int i = 0, j = 0;
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < n; col++) {
@@ -99,11 +102,11 @@ public class Matrix {
         if (c1 != r2)
             throw new IncompatibleMatricesException();
 
-        ElemTypeEnum[][] product = new ElemTypeEnum[r1][c2], firstMatrix = this.getData(), secondMatrix = mat.getData();
+        ElemType[][] product = new ElemType[r1][c2], firstMatrix = this.getData(), secondMatrix = mat.getData();
 
         for(int i = 0; i < r1; i++) {
             for (int j = 0; j < c2; j++) {
-                    product[i][j] = new IntegerElemType(0);
+                    product[i][j] = new IntegerElem(0);
                 for (int k = 0; k < c1; k++) {
                     product[i][j] = product[i][j].add(firstMatrix[i][k].mul(secondMatrix[k][j]));
                 }
@@ -113,19 +116,19 @@ public class Matrix {
         return new Matrix(r1, c2, product);
     }
 
-    private void adjoint(ElemTypeEnum[][] adj){
+    private void adjoint(ElemType[][] adj){
         if (N == 1){
-            adj[0][0] = new IntegerElemType(1);
+            adj[0][0] = new IntegerElem(1);
             return;
         }
-        ElemTypeEnum sign = new IntegerElemType(1);
+        ElemType sign = new IntegerElem(1);
 
-        ElemTypeEnum[][] temp = new ElemTypeEnum[N][N];
+        ElemType[][] temp = new ElemType[N][N];
 
         for (int i=0; i<N; i++) {
             for (int j=0; j<N; j++) {
                 getCofactor(this.data, temp, i, j, N);
-                sign = ((i+j)%2==0)? new IntegerElemType(1): new IntegerElemType(-1);
+                sign = ((i+j)%2==0)? new IntegerElem(1): new IntegerElem(-1);
                 adj[j][i] = sign.mul(determinantHelper(temp, N-1));
             }
         }

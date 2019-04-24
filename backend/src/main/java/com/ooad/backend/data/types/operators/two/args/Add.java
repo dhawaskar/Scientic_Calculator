@@ -2,6 +2,12 @@ package com.ooad.backend.data.types.operators.two.args;
 import com.ooad.backend.data.types.operators.Operator2Arg;
 import org.apache.commons.math3.complex.Complex;
 
+/**
+ * @author Hasil, Sandesh, Gautham
+ *
+ * Implements interface Operator2Arg and supports the addition operation between two entities of different types, as
+ * dictated by the interface
+ */
 public class Add implements Operator2Arg {
 
     @Override
