@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumberSystem" />
+        <activity android:name=".NumberSystemScreen" />
         <activity android:name=".MatrixOperations" />
         <activity android:name=".Combinatorics"></activity>
     </application>

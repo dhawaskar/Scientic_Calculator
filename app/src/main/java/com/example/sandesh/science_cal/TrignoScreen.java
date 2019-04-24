@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+import java.lang.*;
 
 import com.example.sandesh.science_cal.button.behavior.DefaultButtonBehavior;
 
@@ -45,6 +46,10 @@ public class TrignoScreen extends CommonScreenElements {
 
     }
 
+
+
+
+
     @Override
     protected void addOnclickListenersForButtonDelegation() {
         btnDot.setOnClickListener(new DefaultButtonBehavior(txtOutput, btnDot));
@@ -65,7 +70,7 @@ public class TrignoScreen extends CommonScreenElements {
             @Override
             public void onClick(View v) {
 
-                if (appState.getDegreeMode() == StateConstants.DEGREE) {
+                if (appState.getDegreeMode() == StateConstants.DECIMAL) {
                     mXparser.setDegreesMode();
                 } else if (appState.getDegreeMode() == StateConstants.RADIAN) {
                     mXparser.setRadiansMode();

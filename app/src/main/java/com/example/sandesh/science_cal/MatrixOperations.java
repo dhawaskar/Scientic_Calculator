@@ -26,7 +26,7 @@ public class MatrixOperations extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Intent trignometric =new Intent(MatrixOperations.this, Trigonometric.class);
+                Intent trignometric =new Intent(MatrixOperations.this, TrignoScreen.class);
                 startActivity(trignometric);
             }});
     }

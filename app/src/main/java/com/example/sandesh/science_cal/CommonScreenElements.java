@@ -11,7 +11,7 @@ import android.widget.EditText;
 import com.example.sandesh.science_cal.button.behavior.DefaultButtonBehavior;
 
 public abstract class CommonScreenElements extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnCE, btnC;
+    protected  Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDel, btnC;
     private final static String choices[] = {"OPTIONS", "Number System", "Combinatorics", "Matrix Operations"};
     private int RLayoutActivity;
     protected EditText txtOutput;
@@ -25,7 +25,7 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         //To go to Number system Screen
         if (choices[position].equals("Number System")) {
             finish();
-            Intent number_system = new Intent(this, NumberSystem.class);
+            Intent number_system = new Intent(this, NumberSystemScreen.class);
             startActivity(number_system);
         }
         //To go to Combinatorial screen
@@ -54,18 +54,18 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
 
         txtOutput = findViewById(R.id.editText);
 
-        btn0 = findViewById(R.id.button0);
-        btn1 = findViewById(R.id.button1);
-        btn2 = findViewById(R.id.button2);
-        btn3 = findViewById(R.id.button3);
-        btn4 = findViewById(R.id.button4);
-        btn5 = findViewById(R.id.button5);
-        btn6 = findViewById(R.id.button6);
-        btn7 = findViewById(R.id.button7);
-        btn8 = findViewById(R.id.button8);
-        btn9 = findViewById(R.id.button9);
-        btnCE = findViewById(R.id.btnce);
-        btnC = findViewById(R.id.btnc);
+        btn0 = findViewById(R.id.btn0);
+        btn1 = findViewById(R.id.btn1);
+        btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
+        btn5 = findViewById(R.id.btn5);
+        btn6 = findViewById(R.id.btn6);
+        btn7 = findViewById(R.id.btn7);
+        btn8 = findViewById(R.id.btn8);
+        btn9 = findViewById(R.id.btn9);
+        btnDel = findViewById(R.id.btndel);
+        btnC = findViewById(R.id.btncl);
 
         btn0.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn0));
         btn1.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn1));
@@ -85,7 +85,7 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
             }
         });
 
-        btnCE.setOnClickListener(new View.OnClickListener() {
+        btnDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
