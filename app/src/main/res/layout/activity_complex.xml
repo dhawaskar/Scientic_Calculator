@@ -12,7 +12,7 @@
     android:orientation="horizontal"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".ComplexOperations">
+    tools:context=".screens.ComplexOperationsScreen">
 
     <LinearLayout
         android:layout_width="fill_parent"

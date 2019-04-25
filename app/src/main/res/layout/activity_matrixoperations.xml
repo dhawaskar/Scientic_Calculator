@@ -12,7 +12,7 @@
     android:orientation="horizontal"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".MatrixOperations">
+    tools:context=".screens.MatrixOperationsScreen">
 
     <LinearLayout
         android:layout_width="fill_parent"
