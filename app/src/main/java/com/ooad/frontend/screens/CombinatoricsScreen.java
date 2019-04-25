@@ -7,10 +7,14 @@ import android.widget.EditText;
 
 import com.ooad.frontend.R;
 import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
+import com.ooad.frontend.button.behavior.combinatorics.CombnCr;
+import com.ooad.frontend.button.behavior.combinatorics.CombEpow;
+import com.ooad.frontend.button.behavior.combinatorics.CombEq;
+import com.ooad.frontend.button.behavior.combinatorics.CombFact;
+import com.ooad.frontend.button.behavior.combinatorics.CombSq;
+import com.ooad.frontend.button.behavior.combinatorics.CombSqrt;
 //import org.apache.commons.lang3.StringEscapeUtils;
 
-
-import org.mariuszgromada.math.mxparser.Expression;
 
 public class CombinatoricsScreen extends CommonScreenElements {
 
@@ -23,39 +27,18 @@ public class CombinatoricsScreen extends CommonScreenElements {
 
     @Override
     protected void addOnclickListenersForButtonDelegation() {
-        btnFact.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnFact));
-        btnSq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String oldStr = txtOutput.getText().toString();
-                String newStr= oldStr.replace("a^2","");
-                newStr= newStr+ "*" +newStr;
-                Expression exp = new Expression(newStr);
-                Double value = exp.calculate();
-                txtOutput.setText(Double.toString(value));
 
-            }
-        });
+        btnFact.setOnClickListener(new CombFact(txtOutput, btnFact));
+        btnSq.setOnClickListener(new CombSq(txtOutput, btnSq));
+        btnEpow.setOnClickListener(new CombEpow(txtOutput, btnEpow));
 
-        btnEpow.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnFact));
         btnNpr.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnNpr));
-        btnNcr.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnNcr));
+        btnNcr.setOnClickListener(new CombnCr(txtOutput,btnNcr));
         btnPi.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnPi));
         btnLn.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnLn));
         btnLog.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnLog));
-        /*btnSqrt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String oldStr = txtOutput.getText().toString();
-                String newStr= oldStr.replace("","");
-                newStr= newStr+ "*" +newStr;
-                Expression exp = new Expression(newStr);
-                Double value = exp.calculate();
-                txtOutput.setText(Double.toString(value));
 
-            }
-        });*/
-        btnSqrt.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnSqrt));
+        btnSqrt.setOnClickListener(new CombSqrt(txtOutput,btnSqrt));
 
         btnNsqrt.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnNsqrt));
         btnLog.setOnClickListener(new DefaultButtonBehavior(txtOutput,btnLog));
@@ -65,25 +48,14 @@ public class CombinatoricsScreen extends CommonScreenElements {
                 txtOutput.setText("");
             }
         });
-        btnEqu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-
-                String expStr = txtOutput.getText().toString();
-                System.out.println(txtOutput.getText().toString());
-                Expression exp = new Expression(expStr);
-                Double value = exp.calculate();
-                txtOutput.setText(Double.toString(value));
-                // final string
-
-            }
-        });
+        btnEqu.setOnClickListener(new CombEq(txtOutput, btnEqu));
 
     }
 
     @Override
     protected void onCreateDelegation() {
+
         //Button to move to the original screen
         Button button=(Button)findViewById(R.id.selection);
         button.setOnClickListener(new View.OnClickListener() {
@@ -93,6 +65,7 @@ public class CombinatoricsScreen extends CommonScreenElements {
                 Intent trignometric =new Intent(CombinatoricsScreen.this, TrignoScreen.class);
                 startActivity(trignometric);
             }});
+
         txtOutput = findViewById(R.id.editText);
 
         btnFact = findViewById(R.id.btn_fact);
