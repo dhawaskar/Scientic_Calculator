@@ -96,7 +96,9 @@ public abstract class ElemType {
      */
     public abstract Integer getInteger();
 
-//    public abstract ElemType getImag();
+    public abstract String toString();
+
+    //    public abstract ElemType getImag();
 //    public abstract ElemType getReal();
 //    public abstract Boolean checkEqual(ElemType d);
 }

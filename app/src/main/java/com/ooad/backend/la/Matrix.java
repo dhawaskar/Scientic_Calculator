@@ -1,11 +1,14 @@
 package com.ooad.backend.la;
 
+import com.ooad.backend.data.types.ElemFactory;
 import com.ooad.backend.data.types.ElemType;
 import com.ooad.backend.data.types.IntegerElem;
 import com.ooad.backend.data.types.operators.Utils;
 import com.ooad.backend.la.exceptions.IncompatibleMatricesException;
 import com.ooad.backend.la.exceptions.MatrixNonSquareException;
 import com.ooad.backend.la.exceptions.SingularMatrixException;
+
+import java.util.Arrays;
 
 /**
  * @author Hasil Sharma
@@ -19,6 +22,13 @@ public class Matrix {
         this.M = M;
         this.N = N;
         this.data = data;
+    }
+
+    public Matrix(int M, int N, Integer[][] data){
+        ElemType[][] temp = ElemFactory.Integer2DToElemType(data);
+        this.M = M;
+        this.N = N;
+        this.data = temp;
     }
 
     public int[] getDim(){
@@ -133,5 +143,54 @@ public class Matrix {
             }
         }
 
+    }
+
+
+    @Override
+    public String toString() {
+        return "Matrix{" +
+                "data=" + Arrays.toString(data) +
+                '}';
+    }
+
+    public String convertToString(){
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for(int i = 0; i < M; i ++){
+            for(int j = 0; j < N; j++) {
+                stringBuilder.append(data[i][j] + ",");
+            }
+        }
+
+        return stringBuilder.toString();
+    }
+
+    public Matrix add(Matrix m2) throws Exception{
+        int[] m2_size = m2.getDim();
+
+        if(m2_size[0] != M || m2_size[1] != N){
+            throw new IncompatibleMatricesException();
+        }
+
+        ElemType[][] temp = new ElemType[M][N];
+        for(int i = 0; i < M; i++){
+            for(int j = 0; j < N; j++){
+                temp[i][j] = m2.getData()[i][j].add(this.data[i][j]);
+            }
+        }
+
+        return new Matrix(M, N, temp);
+    }
+
+    public Matrix transpose() {
+        ElemType[][] temp = new ElemType[N][M];
+
+        for(int i = 0; i < M; i++){
+            for(int j = 0; j < N; j++){
+                temp[j][i] = this.data[i][j];
+            }
+        }
+
+        return new Matrix(N, N, temp);
     }
 }

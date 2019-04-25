@@ -75,4 +75,8 @@ public class IntegerElem extends ElemType {
         return dobj.getInteger().equals(this.getInteger());
     }
 
+    @Override
+    public String toString() {
+        return Integer.toString(this.getInteger());
+    }
 }

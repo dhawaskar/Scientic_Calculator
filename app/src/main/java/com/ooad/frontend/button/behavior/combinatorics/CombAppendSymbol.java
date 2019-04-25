@@ -6,17 +6,19 @@ import android.widget.EditText;
 
 import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
 
-public class CombSqrt extends DefaultButtonBehavior implements View.OnClickListener {
+public class CombAppendSymbol extends DefaultButtonBehavior implements View.OnClickListener {
+    private String symbol;
 
-    public CombSqrt(EditText txtOutput, Button btn) {
+    public CombAppendSymbol(EditText txtOutput, Button btn, String symbol) {
         super(txtOutput, btn);
+        this.symbol = symbol;
     }
 
     @Override
     public void onClick(View view) {
         String oldStr = txtOutput.getText().toString();
-        String newStr= "sqrt(" + oldStr + ")";
-        Double value = evaluate(newStr);
-        txtOutput.setText("sqrt(");
+        String newStr = oldStr + symbol;
+        txtOutput.setText(newStr);
+
     }
 }

@@ -48,9 +48,8 @@
                     android:layout_weight="1"
                     android:background="@android:color/background_light"
                     android:ems="10"
-                    android:hint="Enter a number"
+                    android:hint="Enter Matrix Size "
                     android:inputType="number"
-                    android:text="Enter the Matrix"
                     android:textColor="#000000"
                     android:textSize="25dp" />
             </LinearLayout>
@@ -74,7 +73,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn1"
+                    android:id="@+id/btn_size"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -89,7 +88,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn2"
+                    android:id="@+id/btn_trp"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -98,13 +97,13 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="transf"
+                    android:text="TRP"
                     android:textAllCaps="false"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
                 <Button
-                    android:id="@+id/btn3"
+                    android:id="@+id/btn_inv"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -113,13 +112,13 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="inverse"
+                    android:text="INV"
                     android:textAllCaps="false"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
                 <Button
-                    android:id="@+id/btn4"
+                    android:id="@+id/btn_c"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -142,7 +141,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn5"
+                    android:id="@+id/btn9"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -157,7 +156,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn6"
+                    android:id="@+id/btn8"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -185,7 +184,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn8"
+                    android:id="@+id/btn_del"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -194,7 +193,7 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="CE"
+                    android:text="DEL"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -208,7 +207,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/btn9"
+                    android:id="@+id/btn6"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -222,7 +221,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn0"
+                    android:id="@+id/btn5"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -236,7 +235,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/dot"
+                    android:id="@+id/btn4"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -250,7 +249,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/Ce"
+                    android:id="@+id/btn_add"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -273,7 +272,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/add"
+                    android:id="@+id/btn3"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -287,7 +286,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/subt"
+                    android:id="@+id/btn2"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -301,7 +300,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/mult"
+                    android:id="@+id/btn1"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -315,7 +314,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/C"
+                    android:id="@+id/btn_mul"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -324,7 +323,7 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_yellow"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="-"
+                    android:text="*"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
@@ -338,7 +337,7 @@
                 android:weightSum="0"
                 >
                 <Button
-                    android:id="@+id/button_extra1"
+                    android:id="@+id/btn_com"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -352,7 +351,7 @@
                     android:textSize="25dp"
                     />
                 <Button
-                    android:id="@+id/button_extra2"
+                    android:id="@+id/btn0"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -366,7 +365,7 @@
                     android:textSize="25dp"
                     />
                 <Button
-                    android:id="@+id/button_extra3"
+                    android:id="@+id/btn_det"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -375,12 +374,12 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_black"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="*"
+                    android:text="DET"
                     android:textColor="#ffffff"
                     android:textSize="25dp"
                     />
                 <Button
-                    android:id="@+id/button_extra4"
+                    android:id="@+id/btn_eq"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"

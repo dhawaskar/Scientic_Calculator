@@ -14,7 +14,7 @@ public class CombEq extends DefaultButtonBehavior implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-            String oldStr = txtOutput.getText().toString() + ")";
+            String oldStr = txtOutput.getText().toString();
             Double value = evaluate(oldStr);
             txtOutput.setText(Double.toString(value));
         }

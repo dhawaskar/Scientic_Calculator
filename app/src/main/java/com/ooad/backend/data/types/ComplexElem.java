@@ -82,4 +82,9 @@ public class ComplexElem extends ElemType {
         throw new UnsupportedOperationException("getInteger doesn't make sense");
     }
 
+    @Override
+    public String toString() {
+        return this.real + " + j" + this.img;
+    }
+
 }

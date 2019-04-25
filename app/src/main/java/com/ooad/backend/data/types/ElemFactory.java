@@ -77,4 +77,17 @@ public final class ElemFactory {
             throw new UnsupportedOperationException();
         }
     }
+
+    public static ElemType[][] Integer2DToElemType(Integer[][] data) {
+        int m = data.length, n = data[0].length;
+        ElemType[][] dataOut = new IntegerElem[m][n];
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                dataOut[i][j] = getObject(data[i][j]);
+            }
+        }
+
+        return dataOut;
+    }
 }
