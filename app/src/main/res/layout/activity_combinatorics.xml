@@ -11,7 +11,7 @@
     android:orientation="horizontal"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".Combinatorics">
+    tools:context=".screens.CombinatoricsScreen">
 
     <LinearLayout
         android:layout_width="fill_parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sandesh.science_cal">
+    package="com.ooad.frontend">
 
     <application
         android:allowBackup="true"
@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TrignoScreen">
+        <activity android:name="com.ooad.frontend.screens.TrignoScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumberSystemScreen" />
-        <activity android:name=".MatrixOperations" />
-        <activity android:name=".Combinatorics"></activity>
-        <activity android:name=".ComplexOperations"></activity>
+        <activity android:name="com.ooad.frontend.screens.NumberSystemScreen" />
+        <activity android:name="com.ooad.frontend.screens.MatrixOperationsScreen" />
+        <activity android:name="com.ooad.frontend.screens.CombinatoricsScreen" />
+        <activity android:name="com.ooad.frontend.screens.ComplexOperationsScreen" />
     </application>
 
 </manifest>
