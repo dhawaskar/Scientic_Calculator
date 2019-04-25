@@ -1,4 +1,7 @@
-
+/*
+Authors: Sandesh D Sathyanarayana, Hasil Sharma and Gautham Kashim
+File: Java Activity file to support the Trigonometric operation of our Andriod Application.
+ */
 package com.ooad.frontend.screens;
 
 import android.view.View;
@@ -16,7 +19,10 @@ import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
 
 import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.mXparser;
-
+/*
+Class: It access the buttons and performs the specified trigonometric operations
+Key Attributes: buttons specific to this acitivty layout ex: btnSinh
+ */
 public class TrignoScreen extends CommonScreenElements {
 
     class AppState {
@@ -50,10 +56,9 @@ public class TrignoScreen extends CommonScreenElements {
         this.appState = new AppState();
 
     }
-
-
-
-
+/*
+Overidden from the base class to access the specific buttons of the layout.
+ */
 
     @Override
     protected void addOnclickListenersForButtonDelegation() {
