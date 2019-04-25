@@ -98,25 +98,36 @@ public class NumberSystemScreen extends CommonScreenElements {
         btnhE.setOnClickListener(new DefaultButtonBehavior(txtInput, btnhE));
         btnhF.setOnClickListener(new DefaultButtonBehavior(txtInput, btnhF));
 
+        /**
+         * Binary state set
+         */
         btnBin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 appState.setModeToBinary();
             }
         });
-
+        /**
+         * Decimal state set
+         */
         btnDec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 appState.setModeToDecimal();
             }
         });
+        /**
+         * Hex State set
+         */
         btnHex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 appState.setModeToHex();
             }
         });
+        /**
+         * clear operation
+         */
         btnC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,7 +137,9 @@ public class NumberSystemScreen extends CommonScreenElements {
                 hexOutput.setText("");
             }
         });
-        /* operations done when equal button is pressed*/
+        /**
+         *  operations done when equal button is pressed
+         */
 
         btnEqu.setOnClickListener(new View.OnClickListener() {
             @Override

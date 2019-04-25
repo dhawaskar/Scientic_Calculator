@@ -1,6 +1,6 @@
-/*
-Authors: Sandesh D Sathyanarayana, Hasil Sharma and Gautham Kashim
-File: Common java base class file that would be derived by all the five activities for each screen of the application.
+/**
+ *Common java base class file that would be derived by all the five activities for each screen of the application.
+ * @Authors: Sandesh D Sathyanarayana, Hasil Sharma and Gautham Kashim
  */
 
 package com.ooad.frontend.screens;
@@ -16,11 +16,12 @@ import android.widget.EditText;
 import com.ooad.frontend.R;
 import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
 
-/*
-Class: This class retrives the common button between all the activities and defines two abstract methods.
-Key attributes: btn1,......btnDel id's of all the common buttons between multitple activities to support the five screen in the
-andriod application.
+/**
+ * Class: This class retrives the common button between all the activities and defines two abstract methods.
+ * Key attributes: btn1,......btnDel id's of all the common buttons between multitple activities to support the five screen in the
+ * andriod application.
  */
+
 public abstract class CommonScreenElements extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     protected Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDel;
 
@@ -41,6 +42,7 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
     @Override
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
 //        Toast.makeText(getApplicationContext(), choices[position], Toast.LENGTH_LONG).show();
+
         //To go to Number system Screen
         if (choices[position].equals(numberSystemDesc)) {
             finish();
@@ -70,7 +72,9 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
 //        }
     }
 
-    //common activity called once the activity is launched.
+    /**
+     * common activity called once the activity is launched.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +83,9 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         addOnclickListenersForButton();
     }
 
+    /**
+     * Defining actions for button clicks that uses default behaviour class method.
+     */
     private void addOnclickListenersForButton() {
         //common buttons/ text area of all the screens
         txtOutput = findViewById(R.id.editText);
@@ -107,7 +114,9 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         btn9.setOnClickListener(new DefaultButtonBehavior(txtOutput, btn9));
 
 
-        //Call back functions for button clicked.
+        /**
+         * Callback for Delete button click operation.
+         */
         btnDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,7 +132,9 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
         addOnclickListenersForButtonDelegation();
     }
 
-    // Two abstract methods that would be overridden by five activities java files to access specific buttons
+    /**
+     *Two abstract methods that would be overridden by five activities java files to access specific buttons
+     */
     protected abstract void addOnclickListenersForButtonDelegation();
 
     protected abstract void onCreateDelegation();

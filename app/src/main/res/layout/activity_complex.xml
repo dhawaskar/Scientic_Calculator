@@ -243,7 +243,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn_plus"
+                    android:id="@+id/btn_add"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -308,7 +308,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn_minus"
+                    android:id="@+id/btn_sub"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -331,7 +331,7 @@
                 android:weightSum="0">
 
                 <Button
-                    android:id="@+id/button_extra1"
+                    android:id="@+id/btn_dot"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -359,14 +359,14 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/button_extra3"
+                    android:id="@+id/btn_img"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:width="90dp"
-                    android:background="@drawable/myborder_black"
+                    android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="i"
                     android:textAllCaps="false"
@@ -374,7 +374,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/button_extra4"
+                    android:id="@+id/btn_equ"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"

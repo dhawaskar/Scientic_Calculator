@@ -16,11 +16,21 @@ public class CombPC extends DefaultButtonBehavior implements View.OnClickListene
 
     private final String symbol;
 
+    /**
+     * Constructor that sets the text behavior for buttons and symbol value used for creating final math expression
+     * @param txtOutput
+     * @param btn
+     * @param symbol
+     */
     public CombPC(EditText txtOutput, Button btn, String symbol) {
         super(txtOutput, btn);
         this.symbol = symbol;
     }
 
+    /**
+     * Implements operation for button click callback - npr and ncr
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         String oldStr = txtOutput.getText().toString();

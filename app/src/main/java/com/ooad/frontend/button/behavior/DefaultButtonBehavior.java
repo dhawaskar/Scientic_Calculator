@@ -1,8 +1,8 @@
 
-/*
-Authors: Sandesh D Sathyanarayana, Hasil Sharma and Gautham Kashim
-File: Defines standard behaviour for buttons - to set text on output screen
 
+/**
+ * Defines standard behaviour for buttons - to set text on output screen * expression evaluation
+ * @author Hasil, Sandesh, Gautham
  */
 
 package com.ooad.frontend.button.behavior;
@@ -26,6 +26,10 @@ public class DefaultButtonBehavior implements View.OnClickListener {
         this.btn = btn;
     }
 
+    /**
+     * Sets the default behaviour for button clicks - writing text output on to app display
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         txtOutput.setText(txtOutput.getText().toString() + btn.getText().toString());
