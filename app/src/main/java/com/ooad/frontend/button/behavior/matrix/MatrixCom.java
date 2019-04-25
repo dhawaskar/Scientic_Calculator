@@ -1,4 +1,8 @@
 package com.ooad.frontend.button.behavior.matrix;
+/**
+ * Implements onclick behavior for comma button in matrix screen layout
+ * @author Hasil, Sandesh, Gautham
+ */
 
 import android.widget.Button;
 import android.widget.EditText;

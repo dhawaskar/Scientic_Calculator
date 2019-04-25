@@ -1,4 +1,8 @@
 package com.ooad.frontend.button.behavior.matrix;
+/**
+ * Implements onclick behavior for Determinant operation  in matrix screen layout
+ * @author Hasil, Sandesh, Gautham
+ */
 
 import android.view.View;
 import android.widget.Button;
@@ -13,10 +17,21 @@ public class MatrixDet extends DefaultButtonBehavior {
 
     private MatrixContext ctx;
 
+    /**
+     * Constructor that instantiates the default button behavior and context
+     * @param txtOutput
+     * @param btn
+     * @param ctx
+     */
     public MatrixDet(EditText txtOutput, Button btn, MatrixContext ctx) {
         super(txtOutput, btn);
         this.ctx = ctx;
     }
+
+    /**
+     * Evaluates the determinant of matrix using backend code
+     * @param view
+     */
 
     @Override
     public void onClick(View view) {

@@ -1,4 +1,11 @@
 package com.ooad.frontend.screens;
+/**
+ * Implements abstract methods for abstract class CommonScreenElements to handle on click operations that are
+ * different from default behaviour for Combinatorics operation. It uses CommAppend Symbol class to generate mathematically correct expression for
+ * expression evaluation
+ * @author Hasil, Sandesh, Gautham
+ */
+
 
 import android.content.Intent;
 import android.view.View;
@@ -18,11 +25,18 @@ public class CombinatoricsScreen extends CommonScreenElements {
             btnright_brkt, btnleft_brkt, btnMul;
     protected EditText txtOutput;
 
+    /**
+     * Constructor for instantiating the object that sets the combinatorics layout screen
+     * @param
+     */
     public CombinatoricsScreen() {
         super(R.layout.activity_combinatorics);
 
     }
-
+    /**
+     * Defining specific operations after the button clicks that are different from DefaultBehaviour
+     * @return void
+     */
     @Override
     protected void addOnclickListenersForButtonDelegation() {
 
@@ -47,6 +61,10 @@ public class CombinatoricsScreen extends CommonScreenElements {
 
     }
 
+    /**
+     * button id to Button id mapping on Button's creation
+     * @return void
+     */
     @Override
     protected void onCreateDelegation() {
 

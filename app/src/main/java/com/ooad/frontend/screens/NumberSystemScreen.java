@@ -1,4 +1,9 @@
 package com.ooad.frontend.screens;
+/**
+ * Implements abstract methods for abstract class CommonScreenElements to handle on click operations that are
+ * different from default behaviour for Number System operations.
+ * @author Hasil, Sandesh, Gautham
+ */
 
 import android.content.Intent;
 import android.view.View;
@@ -12,25 +17,44 @@ import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
 public class NumberSystemScreen extends CommonScreenElements {
     Button btnPlus, btnSub, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF,btnBin,btnDec,btnHex,btnC;
     protected EditText txtInput, binOutput, hexOutput, decOutput;
-
+    /**
+     * Implements AppState for retaining the state of the screen - Decimal State, Hex State, Binary State
+     * State is used to know the input.
+     */
     class AppState {
         private StateConstants mode;
+        /**
+         * Constructor for instantiating the object that sets the State to default decimal input state.
+         * @param
+         */
 
         public AppState() {
             mode = StateConstants.DECIMAL;
         }
-
+        /**
+         * Setter method for Mode Binary
+         */
         public void setModeToBinary(){
             mode = StateConstants.BINARY;
         }
+        /**
+         * Setter method for Hex Binary
+         */
 
         public void setModeToHex(){
             mode = StateConstants.HEX;
         }
+        /**
+         * Setter method for Decimal Binary
+         */
 
         public void setModeToDecimal(){
             mode = StateConstants.DECIMAL;
         }
+        /**
+         * Getter method for Mode or State
+         * @return
+         */
 
         public StateConstants getMode() {
             return mode;
@@ -38,7 +62,10 @@ public class NumberSystemScreen extends CommonScreenElements {
     }
 
     private AppState appState;
-
+    /**
+     * Constructor for instantiating the object that sets the combinatorics layout screen
+     * @param
+     */
     public NumberSystemScreen() {
         super(R.layout.activity_number_system);
         this.appState = new AppState();
@@ -49,14 +76,15 @@ public class NumberSystemScreen extends CommonScreenElements {
     private String intToHex(String exp){
         return Integer.toHexString(Integer.parseInt(exp));
     }
-    private String hextoInt(String exp){
-        return Integer.toString(Integer.parseInt(exp,16));
-
-    }
+    private String hextoInt(String exp){ return Integer.toString(Integer.parseInt(exp,16)); }
     private String bintoInt(String exp){
         return Integer.toString(Integer.parseInt(exp,2));
     }
 
+    /**
+     * Defining specific operations after the button clicks that are different from DefaultBehaviour
+     * @return void
+     */
     @Override
     protected void addOnclickListenersForButtonDelegation() {
 
@@ -98,6 +126,7 @@ public class NumberSystemScreen extends CommonScreenElements {
                 hexOutput.setText("");
             }
         });
+        /* operations done when equal button is pressed*/
 
         btnEqu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +158,10 @@ public class NumberSystemScreen extends CommonScreenElements {
             }
         });
     }
-
+    /**
+     * button id to Button id mapping on Button's creation
+     * @return void
+     */
     @Override
     protected void onCreateDelegation() {
         Button button = (Button) findViewById(R.id.selection);

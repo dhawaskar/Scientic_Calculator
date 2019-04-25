@@ -1,4 +1,10 @@
 package com.ooad.frontend.button.behavior.combinatorics;
+/**
+ * Implements onlick string modifier to get relevant string for npr and ncr operation
+ * using mxparser library
+ * @author Hasil, Sandesh, Gautham
+ */
+
 
 import android.view.View;
 import android.widget.Button;

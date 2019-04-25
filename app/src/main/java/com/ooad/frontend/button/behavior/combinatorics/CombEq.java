@@ -1,4 +1,9 @@
 package com.ooad.frontend.button.behavior.combinatorics;
+/**
+ * Implements equal button click method for calculating expression using mxparser for combinatorics operations
+ * @author Hasil, Sandesh, Gautham
+ */
+
 
 import android.view.View;
 import android.widget.Button;

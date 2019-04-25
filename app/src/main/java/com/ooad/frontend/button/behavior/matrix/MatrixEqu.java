@@ -1,4 +1,8 @@
 package com.ooad.frontend.button.behavior.matrix;
+/**
+ * Implements onclick behavior for equals to button operation in matrix screen
+ * @author Hasil, Sandesh, Gautham
+ */
 
 import android.view.View;
 import android.widget.Button;
@@ -13,11 +17,21 @@ public class MatrixEqu extends DefaultButtonBehavior {
 
     private MatrixContext ctx;
 
+    /**
+     * Constructor that instantiates the context and default button txt display behaviour
+     * @param txtOutput
+     * @param btn
+     * @param ctx
+     */
     public MatrixEqu(EditText txtOutput, Button btn, MatrixContext ctx) {
         super(txtOutput, btn);
         this.ctx = ctx;
     }
 
+    /**
+     * Implements the operation based on the context - add, multiply or stake another input for matrix from user
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         if (ctx.isPendingMultiply() || ctx.isPendingAdd()) {

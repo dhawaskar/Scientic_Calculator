@@ -4,6 +4,11 @@ Purpose: Last screen activity on the android application and performs the Matrix
 */
 
 package com.ooad.frontend.screens;
+/**
+ * Implements abstract methods for abstract class CommonScreenElements to handle on click operations that are
+ * different from default behaviour for Matrix operation.
+ * @author Hasil, Sandesh, Gautham
+ */
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,21 +27,24 @@ import com.ooad.frontend.button.behavior.matrix.MatrixSize;
 import com.ooad.frontend.button.behavior.matrix.MatrixTrp;
 import com.ooad.frontend.button.behavior.matrix.context.MatrixContext;
 
-/**
- * Created by sandesh on 4/21/2019.
- */
 
 public class MatrixOperationsScreen extends CommonScreenElements {
 
     Button btnSize, btnTrp, btnInv, btnC, btnAdd, btnDet, btnMul, btnEqu, btnCom;
     protected EditText txtOutput;
     private MatrixContext ctx;
-
+    /**
+     * Constructor for instantiating the object that sets the Matrix layout screen and sets the context
+     * @param
+     */
     public MatrixOperationsScreen() {
         super(R.layout.activity_matrixoperations);
         ctx = new MatrixContext();
     }
-
+    /**
+     * Defining specific operations after the button clicks that are different from DefaultBehaviour
+     * @return void
+     */
     @Override
     protected void addOnclickListenersForButtonDelegation() {
         btnCom.setOnClickListener(new MatrixCom(txtOutput, btnCom, ctx));
@@ -57,6 +65,10 @@ public class MatrixOperationsScreen extends CommonScreenElements {
         btnTrp.setOnClickListener(new MatrixTrp(txtOutput, btnTrp, ctx));
 
     }
+    /**
+     * button id to Button id mapping on Button's creation
+     * @return void
+     */
 
     @Override
     protected void onCreateDelegation() {
@@ -102,4 +114,6 @@ public class MatrixOperationsScreen extends CommonScreenElements {
 //        });
 //
 //    }
+
+
 }
