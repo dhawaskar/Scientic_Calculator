@@ -1,5 +1,7 @@
 package com.ooad.backend.data.types;
 
+import org.apache.commons.math3.complex.Complex;
+
 /**
  * Implements interface ElemType and used to handle the representation for Complex Numbers. Consists of Imaginary and Real
  * components which are both type of ElemType. Supports operations on Complex Numbers such as calculating conjugate etc.
@@ -28,7 +30,7 @@ public class ComplexElem extends ElemType {
     public ComplexElem(double real, double img) {
         super();
         this.real = ElemFactory.getObject(real);
-        this.real = ElemFactory.getObject(img);
+        this.img = ElemFactory.getObject(img);
     }
 
     /**
@@ -87,4 +89,9 @@ public class ComplexElem extends ElemType {
         return this.real + " + j" + this.img;
     }
 
+    public ComplexElem inv() {
+        Complex cc =  ElemFactory.dataTypeToComplex(this);
+        Complex ci = cc.conjugate().divide(cc.abs());
+        return new ComplexElem(ci.getReal(), ci.getImaginary());
+    }
 }

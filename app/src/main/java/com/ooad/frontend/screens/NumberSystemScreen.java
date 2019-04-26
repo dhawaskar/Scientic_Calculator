@@ -2,6 +2,7 @@ package com.ooad.frontend.screens;
 /**
  * Implements abstract methods for abstract class CommonScreenElements to handle on click operations that are
  * different from default behaviour for Number System operations.
+ *
  * @author Hasil, Sandesh, Gautham
  */
 
@@ -15,14 +16,16 @@ import com.ooad.frontend.misc.StateConstants;
 import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
 
 public class NumberSystemScreen extends CommonScreenElements {
-    Button btnPlus, btnSub, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF,btnBin,btnDec,btnHex,btnC;
+    Button btnPlus, btnSub, btnEqu, btnhA, btnhB, btnhC, btnhD, btnhE, btnhF, btnBin, btnDec, btnHex, btnC;
     protected EditText txtInput, binOutput, hexOutput, decOutput;
+
     /**
      * Implements AppState for retaining the state of the screen - Decimal State, Hex State, Binary State
      * State is used to know the input.
      */
     class AppState {
         private StateConstants mode;
+
         /**
          * Constructor for instantiating the object that sets the State to default decimal input state.
          * @param
@@ -31,26 +34,30 @@ public class NumberSystemScreen extends CommonScreenElements {
         public AppState() {
             mode = StateConstants.DECIMAL;
         }
+
         /**
          * Setter method for Mode Binary
          */
-        public void setModeToBinary(){
+        public void setModeToBinary() {
             mode = StateConstants.BINARY;
         }
+
         /**
          * Setter method for Hex Binary
          */
 
-        public void setModeToHex(){
+        public void setModeToHex() {
             mode = StateConstants.HEX;
         }
+
         /**
          * Setter method for Decimal Binary
          */
 
-        public void setModeToDecimal(){
+        public void setModeToDecimal() {
             mode = StateConstants.DECIMAL;
         }
+
         /**
          * Getter method for Mode or State
          * @return
@@ -62,6 +69,7 @@ public class NumberSystemScreen extends CommonScreenElements {
     }
 
     private AppState appState;
+
     /**
      * Constructor for instantiating the object that sets the combinatorics layout screen
      * @param
@@ -70,15 +78,21 @@ public class NumberSystemScreen extends CommonScreenElements {
         super(R.layout.activity_number_system);
         this.appState = new AppState();
     }
-    private String intToBinary(String exp){
+
+    private String intToBinary(String exp) {
         return Integer.toBinaryString(Integer.parseInt(exp));
     }
-    private String intToHex(String exp){
+
+    private String intToHex(String exp) {
         return Integer.toHexString(Integer.parseInt(exp));
     }
-    private String hextoInt(String exp){ return Integer.toString(Integer.parseInt(exp,16)); }
-    private String bintoInt(String exp){
-        return Integer.toString(Integer.parseInt(exp,2));
+
+    private String hextoInt(String exp) {
+        return Integer.toString(Integer.parseInt(exp, 16));
+    }
+
+    private String bintoInt(String exp) {
+        return Integer.toString(Integer.parseInt(exp, 2));
     }
 
     /**
@@ -150,27 +164,28 @@ public class NumberSystemScreen extends CommonScreenElements {
                 String exp;
                 System.out.println(txtInput.getText().toString());
                 if (appState.getMode() == StateConstants.DECIMAL) {
-                    exp=intToBinary(expStr);
+                    exp = intToBinary(expStr);
                     binOutput.setText(exp);
-                    exp=intToHex(expStr);
+                    exp = intToHex(expStr);
                     hexOutput.setText(exp);
                 } else if (appState.getMode() == StateConstants.HEX) {
-                    exp=hextoInt(expStr);
+                    exp = hextoInt(expStr);
                     decOutput.setText(exp);
-                    exp=intToBinary(exp);
+                    exp = intToBinary(exp);
                     binOutput.setText(exp);
-                } else if(appState.getMode()== StateConstants.BINARY){
-                    exp=bintoInt(expStr);
+                } else if (appState.getMode() == StateConstants.BINARY) {
+                    exp = bintoInt(expStr);
                     decOutput.setText(exp);
-                    exp=intToHex(exp);
+                    exp = intToHex(exp);
                     hexOutput.setText(exp);
-                }else {
+                } else {
                     throw new UnsupportedOperationException();
                 }
 
             }
         });
     }
+
     /**
      * button id to Button id mapping on Button's creation
      * @return void
@@ -204,9 +219,9 @@ public class NumberSystemScreen extends CommonScreenElements {
         btnhE = findViewById(R.id.btne);
         btnhF = findViewById(R.id.btnf);
 
-        btnDec= findViewById(R.id.btndec);
-        btnHex=findViewById(R.id.btnhex);
-        btnBin=findViewById(R.id.btnbin);
+        btnDec = findViewById(R.id.btndec);
+        btnHex = findViewById(R.id.btnhex);
+        btnBin = findViewById(R.id.btnbin);
         btnC = findViewById(R.id.btn_c);
     }
 }

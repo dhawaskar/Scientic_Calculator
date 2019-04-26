@@ -54,16 +54,6 @@ public class IntegerElem extends ElemType {
         return integer;
     }
 
-//    @Override
-//    public ElemType getImag() {
-//        throw new UnsupportedOperationException();
-//    }
-//
-//    @Override
-//    public ElemType getReal() {
-//        throw new UnsupportedOperationException();
-//    }
-
     /**
      * Check for the object equality
      * @param obj

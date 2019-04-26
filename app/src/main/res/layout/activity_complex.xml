@@ -359,7 +359,7 @@
                     android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/btn_img"
+                    android:id="@+id/btn_comma"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -368,7 +368,7 @@
                     android:width="90dp"
                     android:background="@drawable/myborder_grey"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="i"
+                    android:text=","
                     android:textAllCaps="false"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />

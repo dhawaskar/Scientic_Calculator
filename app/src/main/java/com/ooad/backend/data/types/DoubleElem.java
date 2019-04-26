@@ -53,24 +53,6 @@ public class DoubleElem extends ElemType {
         throw new UnsupportedOperationException();
     }
 
-//    /**
-//     * Doesn't make sense to use this for a Double Number
-//     * @throws UnsupportedOperationException whenever called
-//     */
-//    @Override
-//    public ElemType getImag() {
-//        throw new UnsupportedOperationException();
-//    }
-//
-//    /**
-//     * Doesn't make sense to use this for a Double Number
-//     * @throws UnsupportedOperationException whenever called
-//     */
-//    @Override
-//    public ElemType getReal() {
-//        throw new UnsupportedOperationException();
-//    }
-
     /**
      * Converts the object to string
      * @return string representation of the object
