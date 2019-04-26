@@ -411,7 +411,7 @@
                     android:width="90dp"
                     android:background="@drawable/ic_launcher_background"
                     android:gravity="center_vertical|center_horizontal"
-                    android:text="TRIGNOMETRIC"
+                    android:text="TRIGONOMETRIC"
                     android:textColor="#ffffff"
                     android:textSize="25dp" />
 
