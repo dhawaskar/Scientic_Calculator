@@ -19,4 +19,15 @@ public class Utils {
 
         return mnArray;
     }
+
+    public static Double[] stringToDoublerArray(String str){
+        String[] strArray = str.split(",");
+        Double[] mnArray = new Double[strArray.length];
+
+        for (int i = 0; i < strArray.length; i++) {
+            mnArray[i] = Double.valueOf(strArray[i]);
+        }
+
+        return mnArray;
+    }
 }

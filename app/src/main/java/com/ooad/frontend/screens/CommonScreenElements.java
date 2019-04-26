@@ -27,8 +27,9 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
 
     private final static String numberSystemDesc = "Number System";
     private final static String complexNumberDesc = "Complex Numbers";
-    private final static String combinatoricsDesc = "CombinatoricsScreen";
+    private final static String combinatoricsDesc = "Combinatorics";
     private final static String matrixDesc = "Matrix Operations";
+
     protected final static String choices[] = {"OPTIONS", numberSystemDesc, combinatoricsDesc,
             matrixDesc, complexNumberDesc};
 
@@ -41,35 +42,31 @@ public abstract class CommonScreenElements extends AppCompatActivity implements 
 
     @Override
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
-//        Toast.makeText(getApplicationContext(), choices[position], Toast.LENGTH_LONG).show();
-
         //To go to Number system Screen
-        if (choices[position].equals(numberSystemDesc)) {
-            finish();
-            Intent number_system = new Intent(this, NumberSystemScreen.class);
-            startActivity(number_system);
+        switch (choices[position]) {
+            case numberSystemDesc:
+                finish();
+                Intent number_system = new Intent(this, NumberSystemScreen.class);
+                startActivity(number_system);
+                break;
+            //To go to Combinatorial screen
+            case combinatoricsDesc:
+                finish();
+                Intent combination = new Intent(this, CombinatoricsScreen.class);
+                startActivity(combination);
+                break;
+            //To go to Matrix operation screen
+            case matrixDesc:
+                finish();
+                Intent matrixoperations = new Intent(this, MatrixOperationsScreen.class);
+                startActivity(matrixoperations);
+                break;
+            case complexNumberDesc:  // To go to Complex Number System screen
+                finish();
+                Intent complex = new Intent(this, ComplexOperationsScreen.class);
+                startActivity(complex);
+                break;
         }
-        //To go to Combinatorial screen
-        else if (choices[position].equals(combinatoricsDesc)) {
-            finish();
-            Intent combination = new Intent(this, CombinatoricsScreen.class);
-            startActivity(combination);
-        }
-        //To go to Matrix operation screen
-        else if (choices[position].equals(matrixDesc)) {
-            finish();
-            Intent matrixoperations = new Intent(this, MatrixOperationsScreen.class);
-            startActivity(matrixoperations);
-        } else if (choices[position].equals(complexNumberDesc)) { // To go to Complex Number System screen
-            finish();
-            Intent complex = new Intent(this, ComplexOperationsScreen.class);
-            startActivity(complex);
-        }
-//        } else {
-//            finish();
-//            Intent trigno = new Intent(this, TrignoScreen.class);
-//            startActivity(trigno);
-//        }
     }
 
     /**

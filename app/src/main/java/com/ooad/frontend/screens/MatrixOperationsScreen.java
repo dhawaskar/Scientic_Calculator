@@ -97,23 +97,6 @@ public class MatrixOperationsScreen extends CommonScreenElements {
         btnCom = findViewById(R.id.btn_com);
 
     }
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_matrixoperations);
-//        //Button to move to the original screen
-//        Button button = (Button) findViewById(R.id.selection);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                finish();
-//                Intent trignometric = new Intent(MatrixOperationsScreen.this, TrignoScreen.class);
-//                startActivity(trignometric);
-//            }
-//        });
-//
-//    }
 
 
 }

@@ -3,6 +3,7 @@ package com.ooad.frontend.screens;
  * Implements abstract methods for abstract class CommonScreenElements to handle on click operations that are
  * different from default behaviour for Combinatorics operation. It uses CommAppend Symbol class to generate mathematically correct expression for
  * expression evaluation
+ *
  * @author Hasil, Sandesh, Gautham
  */
 
@@ -33,6 +34,7 @@ public class CombinatoricsScreen extends CommonScreenElements {
         super(R.layout.activity_combinatorics);
 
     }
+
     /**
      * Defining specific operations after the button clicks that are different from DefaultBehaviour
      * @return void

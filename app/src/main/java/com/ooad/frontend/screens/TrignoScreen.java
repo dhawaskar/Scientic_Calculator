@@ -11,6 +11,7 @@ import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+
 import java.lang.*;
 
 import com.ooad.frontend.R;
@@ -19,10 +20,11 @@ import com.ooad.frontend.button.behavior.DefaultButtonBehavior;
 
 import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.mXparser;
+
 /**
-* Class: It access the buttons and performs the specified trigonometric operations
-* Key Attributes: buttons specific to this activity layout ex: btnSinh
- * */
+ * Class: It access the buttons and performs the specified trigonometric operations
+ * Key Attributes: buttons specific to this activity layout ex: btnSinh
+ */
 
 public class TrignoScreen extends CommonScreenElements {
     /**
@@ -55,6 +57,7 @@ public class TrignoScreen extends CommonScreenElements {
 
         /**
          * Getter for State in the screen
+         *
          * @return mode
          */
         public StateConstants getDegreeMode() {
@@ -63,7 +66,7 @@ public class TrignoScreen extends CommonScreenElements {
     }
 
     private Button btnSub, btnMul, btnDiv, btnCos, btnSin, btnTan, btnCosh, btnSinh, btnTanh,
-            btnMod, btnEqu, btnBrkt1, btnBrkt2, btnDot, btnPlus,btnC;
+            btnMod, btnEqu, btnBrkt1, btnBrkt2, btnDot, btnPlus, btnC;
     private ToggleButton toggleButton;
 
     private AppState appState;
@@ -76,6 +79,7 @@ public class TrignoScreen extends CommonScreenElements {
 
     /**
      * Defining specific operations after the button clicks that are different from DefaultBehaviour
+     *
      * @return void
      */
     @Override
@@ -141,8 +145,10 @@ public class TrignoScreen extends CommonScreenElements {
         });
 
     }
+
     /**
      * button id to Button id mapping on Button's creation
+     *
      * @return void
      */
     @Override
